@@ -6,31 +6,25 @@ license-file:        LICENSE
 author:              Toralf Wittner
 maintainer:          Toralf Wittner <tw@dtex.org>
 copyright:           (C) 2014-2015 Toralf Wittner
-homepage:            https://github.com/twittner/bytestring-conversion/
-bug-reports:         https://github.com/twittner/bytestring-conversion/issues
-stability:           experimental
+homepage:            https://gitlab.com/twittner/bytestring-conversion
+bug-reports:         https://gitlab.com/twittner/bytestring-conversion/issues
 category:            Data
 build-type:          Simple
 cabal-version:       >= 1.10
-tested-with:
-  GHC==7.4.2,
-  GHC==7.6.3,
-  GHC==7.8.4,
-  GHC==7.10.3
 extra-source-files:  README.md, CHANGELOG.txt
 
 description:
     Defines the type-classes 'ToByteString' and 'FromByteString'
-    to convert values to and from ByteString.
+    to convert values to and from textual 'ByteString' encodings.
 
 source-repository head
-    type:             git
-    location:         git://github.com/twittner/bytestring-conversion.git
+    type:     git
+    location: git@gitlab.com:twittner/bytestring-conversion.git
 
 library
     default-language: Haskell2010
     hs-source-dirs:   src
-    ghc-options:      -Wall -O2 -fwarn-tabs -funbox-strict-fields
+    ghc-options:      -Wall -O2 -fwarn-tabs
 
     exposed-modules:
         Data.ByteString.Conversion
@@ -43,7 +37,7 @@ library
     build-depends:
         base              >= 4.5     && < 5.0
       , attoparsec        >= 0.10    && < 1.0
-      , bytestring        >= 0.9.2.1 && < 1.0
+      , bytestring        >= 0.10.2  && < 1.0
       , case-insensitive  >= 1.2     && < 2.0
       , text              >= 0.11    && < 2.0
 

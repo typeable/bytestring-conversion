@@ -16,8 +16,8 @@ module Data.ByteString.Conversion.To
 
 import Data.ByteString (ByteString)
 import Data.ByteString.Conversion.Internal
-import Data.ByteString.Lazy.Builder
-import Data.ByteString.Lazy.Builder.Extras hiding (runBuilder)
+import Data.ByteString.Builder
+import Data.ByteString.Builder.Extra hiding (runBuilder)
 import Data.CaseInsensitive (CI, original)
 import Data.Int
 import Data.List (intersperse)
