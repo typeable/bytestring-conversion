@@ -21,7 +21,6 @@ import Data.ByteString.Builder.Extra hiding (runBuilder)
 import Data.CaseInsensitive (CI, original)
 import Data.Int
 import Data.List (intersperse)
-import Data.Monoid
 import Data.Text (Text)
 import Data.Text.Encoding (encodeUtf8)
 import Data.Word
